@@ -5,7 +5,7 @@ gastos=ARGV[2].to_i
 utilidades (precio_venta*usuarios)-gastos
 
 if utilidades >0
-    puts utilidades*0.35
+    puts utilidades*0.65
 else
     puts utilidades
 end
