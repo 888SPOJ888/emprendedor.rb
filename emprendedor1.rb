@@ -1,11 +1,16 @@
+#precio_venta = 50
+#usuarios = 1000
+#gastos = 20000
+
+
 precio_venta=ARGV[0].to_i
-usuarios=ARGV[1].to_i
+usuarios_basicos=ARGV[1].to_i
 gastos=ARGV[2].to_i
 
-utilidades (precio_venta*usuarios)-gastos
+x = precio_venta * usuarios_basicos - gastos
 
-if utilidades >0
-    puts utilidades*0.65
+if x > 0
+    puts "utilidades son de #{x * 0.35}"
 else
-    puts utilidades
+    puts "las utilidades son menores o igual a 0, por lo que sus utilidades son #{x}" 
 end
